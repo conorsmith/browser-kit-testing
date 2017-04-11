@@ -2,10 +2,10 @@
 
 namespace Laravel\BrowserKitTesting\Constraints;
 
-use PHPUnit_Framework_Constraint;
+use PHPUnit\Framework\Constraint;
 use Symfony\Component\DomCrawler\Crawler;
 use SebastianBergmann\Comparator\ComparisonFailure;
-use PHPUnit_Framework_ExpectationFailedException as FailedExpection;
+use PHPUnit\Framework\ExpectationFailedException as FailedExpection;
 
 abstract class PageConstraint extends PHPUnit_Framework_Constraint
 {
@@ -66,7 +66,7 @@ abstract class PageConstraint extends PHPUnit_Framework_Constraint
      * @param  \SebastianBergmann\Comparator\ComparisonFailure|null  $comparisonFailure
      * @return void
      *
-     * @throws \PHPUnit_Framework_ExpectationFailedException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      */
     protected function fail($crawler, $description, ComparisonFailure $comparisonFailure = null)
     {
