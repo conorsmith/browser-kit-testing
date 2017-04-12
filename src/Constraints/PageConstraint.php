@@ -2,7 +2,7 @@
 
 namespace Laravel\BrowserKitTesting\Constraints;
 
-use PHPUnit\Framework\Constraint;
+use PHPUnit\Framework\Constraint\Constraint;
 use Symfony\Component\DomCrawler\Crawler;
 use SebastianBergmann\Comparator\ComparisonFailure;
 use PHPUnit\Framework\ExpectationFailedException as FailedExpection;
