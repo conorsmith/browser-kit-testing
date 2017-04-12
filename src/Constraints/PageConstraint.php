@@ -7,7 +7,7 @@ use Symfony\Component\DomCrawler\Crawler;
 use SebastianBergmann\Comparator\ComparisonFailure;
 use PHPUnit\Framework\ExpectationFailedException as FailedExpection;
 
-abstract class PageConstraint extends PHPUnit_Framework_Constraint
+abstract class PageConstraint extends Constraint
 {
     /**
      * Make sure we obtain the HTML from the crawler or the response.
